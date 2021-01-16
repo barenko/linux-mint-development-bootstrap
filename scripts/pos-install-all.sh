@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Finishing the configuration..."
 
 echo "    Set your favorite editor..."

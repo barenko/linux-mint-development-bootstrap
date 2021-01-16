@@ -1,7 +1,8 @@
+#!/bin/bash
 echo "Removing bloatware..."
 
 echo "    java openjdk... Thanks, but I prever manage the java myself"
-sudo apt purge -y openjdk-11-jre openjdk-11-jre-headless
+sudo apt purge -y openjdk-8-jre openjdk-8-jre-headless openjdk-11-jre openjdk-11-jre-headless
 
 echo "    libreoffice... because is resource expensive, ugly and I never liked it"
 sudo apt purge -y libreoffice-core libreoffice-common

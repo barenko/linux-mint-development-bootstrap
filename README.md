@@ -5,7 +5,9 @@ I made this project with the environment that I currently use. If you like the c
 
 #### Run the start script:
 
-    
+    wget https://github.com/barenko/linux-mint-development-bootstrap/archive/master.zip -O /tmp/master.zip
+    unzip /tmp/master.zip /tmp
+    cd /tmp/linux-mint-development-bootstrap
     bash ./scripts/start.sh
 
 

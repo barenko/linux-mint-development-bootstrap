@@ -2,9 +2,10 @@ echo "Installing the tool set..."
 
 echo "   ZSH... no explain needed"
 sudo apt install -y git curl wget zsh
-chsh -s $(which zsh)
+#chsh -s $(which zsh)
 
 echo "    oh-my-zsh... because the life is fun too"
+RUNZSH=no
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 source ~/.zshrc
 
@@ -20,8 +21,9 @@ echo "    vim... old, fast, resource cheap and very versatile"
 sudo apt install -y vim
 
 echo "    terminator...because I too want the iTerm-like experience into linux too"
-sudo add-apt-repository ppa:gnome-terminator
+sudo add-apt-repository -y ppa:gnome-terminator
 sudo apt update
+#!/bin/bash
 sudo apt install -y terminator 
 
 echo "    httpie...let's forget the curl/wget syntax bullshit"
@@ -38,3 +40,7 @@ curl -sS https://webinstall.dev/watchexec/ | bash
 sudo sh -c "wget -qO- https://github.com/ogham/exa/releases/download/v0.9.0/exa-linux-x86_64-0.9.0.zip | funzip > /bin/exa && chmod +x /bin/exa"
 
 echo "    htop... to manage processes with decency"
+sudo apt install -y htop
+
+echo "    tree... see folders as a tree"
+sudo apt install -y tree

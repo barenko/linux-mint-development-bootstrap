@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Installing Golang..."
 asdf plugin-add golang
 asdf install golang latest

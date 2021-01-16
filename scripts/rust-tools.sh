@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Installing Rust..."
 asdf plugin-add rust
 asdf install rust latest
